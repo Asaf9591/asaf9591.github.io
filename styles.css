@@ -38,6 +38,7 @@ body {
     padding: 0 24px;
 }
 
+
 /* ========== TIPOGRAFÍA ========== */
 .highlight {
     background: var(--gradient);
@@ -63,6 +64,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
+
 
 /* ========== NAVBAR ========== */
 .navbar {
@@ -92,6 +94,15 @@ body {
 
 .nav-brand .brand-icon {
     font-size: 1.6rem;
+}
+
+/* ---- Logo SVG en navbar ---- */
+.brand-logo {
+    height: 32px;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 8px;
 }
 
 .nav-menu {
@@ -128,6 +139,7 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 
 /* ========== HERO ========== */
 .hero {
@@ -191,6 +203,13 @@ body {
     margin-bottom: 48px;
 }
 
+/* ---- Logo grande en hero (opcional) ---- */
+.hero-logo-img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 24px;
+}
+
 .btn-hero-primary {
     display: inline-flex;
     align-items: center;
@@ -248,6 +267,7 @@ body {
     color: var(--text-muted);
     font-size: 0.85rem;
 }
+
 
 /* ========== TERMINAL ========== */
 .terminal {
@@ -316,6 +336,7 @@ body {
     text-decoration: underline;
 }
 
+
 /* ========== FEATURES ========== */
 .features {
     padding: 80px 0;
@@ -355,6 +376,7 @@ body {
     font-size: 0.95rem;
     line-height: 1.6;
 }
+
 
 /* ========== INSTALLATION ========== */
 .installation {
@@ -427,6 +449,7 @@ body {
     color: var(--primary);
     margin-right: 8px;
 }
+
 
 /* ========== PRICING ========== */
 .pricing {
@@ -534,7 +557,8 @@ body {
     opacity: 0.3;
 }
 
-.btn-pricing, .btn-pricing-primary {
+.btn-pricing,
+.btn-pricing-primary {
     display: block;
     padding: 12px;
     border-radius: 50px;
@@ -584,6 +608,7 @@ body {
     font-size: 0.95rem;
 }
 
+
 /* ========== FOOTER ========== */
 .footer {
     padding: 48px 0 32px;
@@ -608,6 +633,14 @@ body {
 .footer-brand p {
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+/* ---- Logo SVG en footer ---- */
+.brand-logo-footer {
+    height: 28px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .footer-links {
@@ -644,6 +677,7 @@ body {
     font-size: 0.8rem;
     opacity: 0.7;
 }
+
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 992px) {
@@ -703,6 +737,14 @@ body {
 
     .hero-title {
         font-size: 2.2rem;
+    }
+
+    .hero-logo-img {
+        max-width: 100px;
+    }
+
+    .brand-logo {
+        height: 24px;
     }
 
     .features-grid {
