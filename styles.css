@@ -96,13 +96,13 @@ body {
     font-size: 1.6rem;
 }
 
-/* ---- Logo SVG en navbar ---- */
+/* Logo en el navbar - VERSIÓN GRANDE */
 .brand-logo {
-    height: 32px;
+    height: 48px;           /* Antes: 32px */
     width: auto;
     vertical-align: middle;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 12px;     /* Más separación del texto */
 }
 
 .nav-menu {
