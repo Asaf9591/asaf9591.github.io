@@ -92,13 +92,13 @@ body {
     font-weight: 700;
 }
 
-/* ===== LOGO EN NAVBAR (TAMAÑO OPTIMIZADO) ===== */
+/* ===== LOGO EN NAVBAR ===== */
 .brand-logo {
-    height: 40px;
+    height: 56px;
     width: auto;
     vertical-align: middle;
     display: inline-block;
-    margin-right: 12px;
+    margin-right: 14px;
 }
 
 .nav-menu {
@@ -199,7 +199,7 @@ body {
     margin-bottom: 48px;
 }
 
-/* ===== LOGO EN HERO (TAMAÑO GRANDE) ===== */
+/* ===== LOGO EN HERO ===== */
 .hero-logo {
     text-align: center;
     margin-bottom: 24px;
@@ -636,12 +636,12 @@ body {
     font-size: 0.9rem;
 }
 
-/* ===== LOGO EN FOOTER (TAMAÑO OPTIMIZADO) ===== */
+/* ===== LOGO EN FOOTER ===== */
 .brand-logo-footer {
-    height: 32px;
+    height: 36px;
     width: auto;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 .footer-links {
