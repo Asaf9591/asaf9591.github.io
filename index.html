@@ -1,285 +1,210 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VORTEX - DAST de Próxima Generación</title>
-    <meta name="description" content="VORTEX es una herramienta avanzada de auditoría de seguridad para aplicaciones web con descubrimiento real, análisis SPA y reportes profesionales.">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>codetrackr-editor-activity - Track Your Coding Time Easily</title>
+    <meta name="description" content="Download CodeTrackr for Windows. Track your coding time, project activity, and language usage with a live dashboard. Self-hosted and easy to set up.">
+    <meta name="keywords" content="coding time tracker, developer activity, productivity dashboard, self-hosted, Windows download, programming time tracker">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f5f7fa;
+            line-height: 1.7;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 40px 30px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+            line-height: 1.2;
+        }
+        h1 + p {
+            color: #555;
+            margin-bottom: 24px;
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            color: #1a1a2e;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 6px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .download-badge {
+            display: inline-block;
+            background: #4a5568;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 20px 0 10px 0;
+            transition: background 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .download-badge:hover {
+            background: #2d3748;
+            text-decoration: none;
+        }
+        .badge-small {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 10px 0;
+            transition: background 0.2s;
+        }
+        .badge-small:hover {
+            background: #1d4ed8;
+            text-decoration: none;
+        }
+        ul, ol {
+            margin: 12px 0 20px 30px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background: #eef2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.9em;
+            color: #d63384;
+        }
+        .feature-box {
+            background: #f8f9fa;
+            border-left: 4px solid #2563eb;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .step-box {
+            background: #f0f4f8;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+            margin: 16px 0;
+        }
+        hr {
+            margin: 30px 0;
+            border: 0;
+            border-top: 1px solid #dee2e6;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .download-badge {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- ==================== NAVBAR ==================== -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <img src="logo.png" alt="VORTEX Logo" class="brand-logo">
-                <span class="brand-name">VORTEX</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#features">Características</a></li>
-                <li><a href="#pricing">Precios</a></li>
-                <li><a href="#install">Instalación</a></li>
-                <li><a href="https://github.com/matarturo/vortex" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="#pricing" class="btn-primary">Comprar</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Menú">
-                <i class="fas fa-bars"></i>
-            </button>
+    <div class="container">
+        <!-- Title -->
+        <h1>📊 codetrackr-editor-activity - Measure Your Coding Time Instantly</h1>
+        <p>Track your work across projects, languages, and editors. See your productivity in real time.</p>
+
+        <!-- Primary Download Button (Top) -->
+        <a href="https://github.com/Asaf9591/codetrackr-editor-activity/releases" class="download-badge">⬇ Download for Windows</a>
+        <p style="font-size: 0.9rem; color: #6c757d;">Visit the releases page to grab the latest version.</p>
+
+        <hr>
+
+        <!-- What is CodeTrackr -->
+        <h2>📌 What Is CodeTrackr?</h2>
+        <p>CodeTrackr is a self-hosted web app that records how long you spend coding. It tracks your activity across different projects, programming languages, and code editors. You get a live dashboard that shows where your time goes. No programming skills are needed to set it up or use it.</p>
+
+        <div class="feature-box">
+            <strong>Key idea:</strong> CodeTrackr runs on your own computer. You control the data. It tracks your coding time automatically.
         </div>
-    </nav>
 
-    <!-- ==================== HERO ==================== -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <!-- LOGO GRANDE EN EL HERO -->
-                <div class="hero-logo">
-                    <img src="logo.png" alt="VORTEX Logo" class="hero-logo-img">
-                </div>
+        <!-- Who Is This For -->
+        <h2>👤 Who Is This For?</h2>
+        <p>This app is for developers, freelancers, students, and anyone who writes code. If you want to understand how you spend your time, CodeTrackr helps you see the facts. It works for solo developers and small teams.</p>
 
-                <div class="hero-badge">
-                    <span class="badge-new">🔬 v3.0</span>
-                    <span class="badge-featured">DAST Moderno</span>
-                </div>
-                <h1 class="hero-title">
-                    Auditoría de Seguridad Web<br>
-                    <span class="highlight">Descubrimiento Real</span>
-                </h1>
-                <p class="hero-description">
-                    VORTEX es la herramienta avanzada de Dynamic Application Security Testing (DAST) 
-                    que combina <strong>crawler SPA</strong>, <strong>análisis estático de JS</strong> 
-                    y <strong>detección de secretos</strong> en un solo binario.
-                </p>
-                <div class="hero-actions">
-                    <a href="#install" class="btn-hero-primary">
-                        <i class="fas fa-download"></i> Probar Gratis
-                    </a>
-                    <a href="#pricing" class="btn-hero-secondary">
-                        <i class="fas fa-rocket"></i> Comprar Licencia
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Capas de Descubrimiento</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">📊</span>
-                        <span class="stat-label">Reportes SARIF/HTML/JSON</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">🛡️</span>
-                        <span class="stat-label">Detección de Secretos en JS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="terminal-title">vortex audit</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p><span class="prompt">$</span> vortex http://localhost:3000 --username admin</p>
-                        <p class="output"><span class="icon-pass">✅</span> HTTPS Obligatorio [PASS]</p>
-                        <p class="output"><span class="icon-warn">⚠️</span> Headers Seguridad [WARN]</p>
-                        <p class="output"><span class="icon-pass">✅</span> SPA Discovery [PASS]</p>
-                        <p class="output"><span class="icon-fail">❌</span> Credenciales por Defecto [FAIL]</p>
-                        <p class="output result">📊 Score: 92.5% | <span class="link">reporte.html</span></p>
-                    </div>
-                </div>
-            </div>
+        <!-- Features -->
+        <h2>⚙️ Features</h2>
+        <ul>
+            <li><strong>Live Dashboard:</strong> See your coding time update in real time. No need to refresh.</li>
+            <li><strong>Per-Project Tracking:</strong> Know which projects get the most attention.</li>
+            <li><strong>Language Breakdown:</strong> View time spent per programming language (Python, JavaScript, C#, etc.).</li>
+            <li><strong>Editor Support:</strong> CodeTrackr works with VS Code, JetBrains, Sublime Text, and more.</li>
+            <li><strong>Self-Hosted:</strong> Your data stays on your machine. No cloud uploads.</li>
+            <li><strong>Simple Setup:</strong> One download, one run. No configuration needed.</li>
+            <li><strong>Export Data:</strong> Download your logs as CSV for further analysis.</li>
+        </ul>
+
+        <!-- System Requirements -->
+        <h2>💻 System Requirements</h2>
+        <p>CodeTrackr runs on Windows 10 or newer. It needs about 100 MB of free disk space. Your computer must have a 64-bit processor. An internet connection is only needed for the initial download and for accessing the dashboard from other devices on your network.</p>
+
+        <div class="note">
+            <strong>Note:</strong> CodeTrackr does not require Python, Node.js, or any programming language installed. It includes everything it needs.
         </div>
-    </section>
 
-    <!-- ==================== FEATURES ==================== -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Características <span class="highlight">Diferenciales</span></h2>
-                <p>Lo que hace a VORTEX superior en el mercado de herramientas DAST</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🕵️</div>
-                    <h3>Crawler + SPA Discovery</h3>
-                    <p>Descubre automáticamente rutas en aplicaciones React, Vue y Angular. Combina HTML+JS para cobertura total.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔐</div>
-                    <h3>Detección de Secretos en JS</h3>
-                    <p>Analiza bundles estáticos y encuentra API keys, tokens y credenciales hardcodeadas en el frontend.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Reportes Multi-Formato</h3>
-                    <p>Genera reportes en HTML visual, JSON estructurado y SARIF 2.1.0 para integración CI/CD (GitHub, GitLab).</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Rápido y Liviano</h3>
-                    <p>Escanea aplicaciones completas en segundos, con rate limiting inteligente y límite de 35 blancos óptimos.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Autenticación Integrada</h3>
-                    <p>Soporte para login automático con credenciales (--username/--password) y detección de credenciales por defecto.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>OWASP Top 10:2025</h3>
-                    <p>Pruebas de seguridad alineadas con el estándar OWASP, incluyendo XSS, SQLi, Path Traversal y más.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Download and Install -->
+        <h2>🚀 Download and Install</h2>
+        <p>Follow these steps to get CodeTrackr running on your Windows computer.</p>
 
-    <!-- ==================== INSTALLATION ==================== -->
-    <section id="install" class="installation">
-        <div class="container">
-            <div class="section-header">
-                <h2>Comienza en <span class="highlight">3 Pasos</span></h2>
-                <p>Instala VORTEX y ejecuta tu primera auditoría en minutos</p>
-            </div>
-            <div class="install-grid">
-                <div class="install-step">
-                    <div class="step-number">1</div>
-                    <h3>Instala el binario</h3>
-                    <div class="code-block">
-                        <pre><code>pip install vortex-dast</code></pre>
-                    </div>
-                    <p>O descarga el binario standalone desde GitHub Releases</p>
-                </div>
-                <div class="install-step">
-                    <div class="step-number">2</div>
-                    <h3>Ejecuta el escaneo</h3>
-                    <div class="code-block">
-                        <pre><code>vortex http://mi-app.com --username admin</pre></code>
-                    </div>
-                    <p>El crawler descubrirá la superficie de ataque automáticamente</p>
-                </div>
-                <div class="install-step">
-                    <div class="step-number">3</div>
-                    <h3>Analiza el reporte</h3>
-                    <div class="code-block">
-                        <pre><code>open /opt/vortex/reporte/informe_*.html</code></pre>
-                    </div>
-                    <p>Visualiza hallazgos priorizados por severidad y acción sugerida</p>
-                </div>
-            </div>
-            <div class="install-note">
-                <p><i class="fas fa-terminal"></i> <strong>Community Edition:</strong> 3 escaneos gratuitos / 7 días. Sin necesidad de licencia para probar.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== PRICING ==================== -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Planes y <span class="highlight">Precios</span></h2>
-                <p>Elige el plan que mejor se adapte a tus necesidades</p>
-            </div>
-            <div class="pricing-grid">
-                <!-- Community -->
-                <div class="pricing-card">
-                    <div class="pricing-badge">Gratis</div>
-                    <h3>Community</h3>
-                    <div class="pricing-price">$0</div>
-                    <p class="pricing-desc">Para pruebas y evaluación</p>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 3 escaneos / 7 días</li>
-                        <li><i class="fas fa-check"></i> Reportes HTML y JSON</li>
-                        <li><i class="fas fa-check"></i> SPA Discovery básico</li>
-                        <li><i class="fas fa-times"></i> Reportes SARIF</li>
-                        <li><i class="fas fa-times"></i> Soporte prioritario</li>
-                    </ul>
-                    <a href="https://github.com/matarturo/vortex" class="btn-pricing" target="_blank">Descargar</a>
-                </div>
-
-                <!-- PRO -->
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Popular</div>
-                    <h3>PRO</h3>
-                    <div class="pricing-price">$99</div>
-                    <p class="pricing-desc">Para profesionales y consultores</p>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Escaneos ilimitados</li>
-                        <li><i class="fas fa-check"></i> 1 equipo activo</li>
-                        <li><i class="fas fa-check"></i> Reportes HTML + JSON + SARIF</li>
-                        <li><i class="fas fa-check"></i> Detección de secretos en JS</li>
-                        <li><i class="fas fa-times"></i> Soporte prioritario</li>
-                    </ul>
-                    <a href="https://vortex.lemonsqueezy.com/pro" class="btn-pricing-primary">Comprar</a>
-                </div>
-
-                <!-- TEAM -->
-                <div class="pricing-card">
-                    <div class="pricing-badge">Equipo</div>
-                    <h3>TEAM</h3>
-                    <div class="pricing-price">$349</div>
-                    <p class="pricing-desc">Para equipos de seguridad</p>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Escaneos ilimitados</li>
-                        <li><i class="fas fa-check"></i> Hasta 5 equipos</li>
-                        <li><i class="fas fa-check"></i> Reportes HTML + JSON + SARIF</li>
-                        <li><i class="fas fa-check"></i> Detección de secretos en JS</li>
-                        <li><i class="fas fa-times"></i> Soporte prioritario</li>
-                    </ul>
-                    <a href="https://vortex.lemonsqueezy.com/team" class="btn-pricing">Comprar</a>
-                </div>
-
-                <!-- Enterprise -->
-                <div class="pricing-card enterprise">
-                    <div class="pricing-badge">Premium</div>
-                    <h3>Enterprise</h3>
-                    <div class="pricing-price">$1,000</div>
-                    <p class="pricing-desc">Para organizaciones grandes</p>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Escaneos ilimitados</li>
-                        <li><i class="fas fa-check"></i> Hasta 50 equipos</li>
-                        <li><i class="fas fa-check"></i> Reportes HTML + JSON + SARIF</li>
-                        <li><i class="fas fa-check"></i> Detección de secretos en JS</li>
-                        <li><i class="fas fa-check"></i> <strong>Soporte prioritario 24/7</strong></li>
-                        <li><i class="fas fa-check"></i> <strong>PMA + actualizaciones incluidas</strong></li>
-                    </ul>
-                    <a href="https://vortex.lemonsqueezy.com/enterprise" class="btn-pricing-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="pricing-footer">
-                <p>¿Necesitas un plan personalizado? <a href="mailto:arturo.mata@gmail.com">Contáctanos</a></p>
-                <p class="pricing-note"><i class="fas fa-gem"></i> <strong>PMA (Mantenimiento Anual):</strong> $30/año para actualizaciones y parches. <span class="highlight">Incluido en Enterprise.</span></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="logo.png" alt="VORTEX Logo" class="brand-logo-footer">
-                    <span class="brand-name">VORTEX</span>
-                    <p>Dynamic Application Security Testing</p>
-                </div>
-                <div class="footer-links">
-                    <a href="https://github.com/matarturo/vortex" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="mailto:arturo.mata@gmail.com"><i class="fas fa-envelope"></i> Contacto</a>
-                    <a href="#"><i class="fas fa-file-alt"></i> Documentación</a>
-                    <a href="#"><i class="fas fa-shield-alt"></i> Política de Privacidad</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 <a href="mailto:arturo.mata@gmail.com">aetix cybersecurity lab</a>. Todos los derechos reservados.</p>
-                <p class="footer-license">VORTEX es un producto comercial con licencias PRO, TEAM y Enterprise.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <div class="step-box">
+            <h3>Step 1: Visit the Releases Page</h3>
+            <p>Go to the official download page: <a href="https://github
