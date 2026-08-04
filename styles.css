@@ -92,17 +92,13 @@ body {
     font-weight: 700;
 }
 
-.nav-brand .brand-icon {
-    font-size: 1.6rem;
-}
-
-/* Logo en el navbar - VERSIÓN GRANDE */
+/* ===== LOGO EN NAVBAR (TAMAÑO OPTIMIZADO) ===== */
 .brand-logo {
-    height: 32px;       
+    height: 40px;
     width: auto;
     vertical-align: middle;
     display: inline-block;
-    margin-right: 12px;   
+    margin-right: 12px;
 }
 
 .nav-menu {
@@ -203,11 +199,16 @@ body {
     margin-bottom: 48px;
 }
 
-/* ---- Logo grande en hero (opcional) ---- */
-.hero-logo-img {
-    max-width: 150px;
-    height: auto;
+/* ===== LOGO EN HERO (TAMAÑO GRANDE) ===== */
+.hero-logo {
+    text-align: center;
     margin-bottom: 24px;
+}
+
+.hero-logo-img {
+    max-width: 180px;
+    height: auto;
+    display: inline-block;
 }
 
 .btn-hero-primary {
@@ -635,9 +636,9 @@ body {
     font-size: 0.9rem;
 }
 
-/* ---- Logo SVG en footer ---- */
+/* ===== LOGO EN FOOTER (TAMAÑO OPTIMIZADO) ===== */
 .brand-logo-footer {
-    height: 28px;
+    height: 32px;
     width: auto;
     vertical-align: middle;
     margin-right: 8px;
@@ -739,11 +740,16 @@ body {
         font-size: 2.2rem;
     }
 
-    .hero-logo-img {
-        max-width: 100px;
+    /* ===== LOGOS EN MÓVIL ===== */
+    .brand-logo {
+        height: 28px;
     }
 
-    .brand-logo {
+    .hero-logo-img {
+        max-width: 120px;
+    }
+
+    .brand-logo-footer {
         height: 24px;
     }
 
